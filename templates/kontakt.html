@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}Kontakt - Adaptační kurz VŠPJ{% endblock %}
+
+{% block custom_styles %}
+<style>
+    .contact-card {
+        background: linear-gradient(135deg, #f8f9fa, #ffffff);
+        padding: 30px;
+        border-radius: 10px;
+        border: 3px solid #e74c3c; /* Thicker, solid border */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+    .contact-card h2 {
+        color: #e74c3c;
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+    }
+    .contact-card p {
+        color: #333;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+    .contact-card a {
+        color: #e74c3c;
+        text-decoration: none;
+    }
+    .contact-card a:hover {
+        text-decoration: underline;
+    }
+    hr {
+        border-top: 1px solid #e74c3c;
+        margin: 20px 0;
+    }
+</style>
+{% endblock %}
+
+{% block header %}
+<h1>Kontakt</h1>
+{% endblock %}
+
+{% block content %}
+<div class="contact-card">
+    <h2>Důležité kontakty</h2>
+    <p><strong>Adapťák VŠPJ</strong></p>
+    <p>Email: <a href="mailto:adaptak.vspj@gmail.com">adaptak.vspj@gmail.com</a></p>
+    <hr>
+    <p><strong>Adapťák pořádá Adapťák s.r.o.</strong></p>
+    <p>IČO: 19226985</p>
+    <p>DIČ: CZ19226985</p>
+    <p>Společnost je zapsána v obchodním rejstříku vedeném krajským soudem v Hradci Králové, oddíl C, vložka 51033.</p>
+</div>
+{% endblock %}
